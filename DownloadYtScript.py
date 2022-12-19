@@ -44,7 +44,7 @@ def onclick():
     elif int(choix1)==2:
         youtubeObject = youtubeObject.streams.get_audio_only()
         try:
-            youtubeObject.download(output_path="Song")
+            youtubeObject.download(output_path="Songs")
         except:
             error()
     messagebox.showinfo('Done', "download Done Successful")
